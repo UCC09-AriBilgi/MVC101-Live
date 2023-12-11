@@ -1,8 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using P02_Models.Models;
+using P03_Controllers.Models;
 using System.Diagnostics;
 
-namespace P02_Models.Controllers
+// Controller lar aslında bir grup "action" adlandırdığımız sanki "OnClick" olayı gibi ...
+// Yaptığı olay etrafı dinlemek(HTTP Request-istekler) buna göre ilgili yerlere yönlendirme yapmak(trafik polisi)
+
+
+namespace P03_Controllers.Controllers
 {
     public class HomeController : Controller
     {
@@ -21,15 +25,6 @@ namespace P02_Models.Controllers
         public IActionResult Privacy()
         {
             return View();
-        }
-
-        public JsonResult GetStudentDetail(int id)
-        {
-            StudentRepository repository = new StudentRepository(); // Örnekleme yaptım
-
-            Student studentDetails = repository.Get(id);
-
-            return Json(studentDetails); // yukardaki fonksiyondan gelen bilgiyi JSON türünde geri döndürüyorum.
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

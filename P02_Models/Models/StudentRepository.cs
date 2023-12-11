@@ -20,6 +20,8 @@
         public Student Get(int StudentID)
         {
             return DBTable().FirstOrDefault(e => e.StudentId == StudentID) ?? new Student();
+            // Eğer ilgili kayıdı listeden bulursa onu JSON formatında getirecek, yoksa boş kayıt getirecek
+
         }
     }
 }
