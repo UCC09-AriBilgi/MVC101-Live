@@ -23,6 +23,17 @@ namespace P02_Models.Controllers
             return View();
         }
 
+        public JsonResult GetStudentDetail(int id)
+        {
+            StudentRepository repository = new StudentRepository(); // Örnekleme yaptım
+
+            Student studentDetails = repository.Get(id);
+
+            return Json(studentDetails); // yukardaki fonksiyondan gelen bilgiyi JSON türünde geri döndürüyorum.
+
+
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
