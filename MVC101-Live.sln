@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04_Views", "P04_Views\P04_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_DataPassingToViews", "P05_DataPassingToViews\P05_DataPassingToViews.csproj", "{E7042A25-FEF7-441C-80C0-D76A16DF6281}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_RazorViewEngine", "P06_RazorViewEngine\P06_RazorViewEngine.csproj", "{31B5FED1-1CFD-4644-B455-D53E7C1CB594}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E7042A25-FEF7-441C-80C0-D76A16DF6281}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7042A25-FEF7-441C-80C0-D76A16DF6281}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7042A25-FEF7-441C-80C0-D76A16DF6281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B5FED1-1CFD-4644-B455-D53E7C1CB594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B5FED1-1CFD-4644-B455-D53E7C1CB594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B5FED1-1CFD-4644-B455-D53E7C1CB594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B5FED1-1CFD-4644-B455-D53E7C1CB594}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

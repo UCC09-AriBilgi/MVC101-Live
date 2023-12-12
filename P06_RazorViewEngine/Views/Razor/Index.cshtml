@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Razor Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">RAZOR ENGINE</h1>
+
+
+</div>
+@* <ul class="navbar-nav flex-grow-1">
+    @for (int sayac = 1; sayac <= 10; sayac++)
+    {
+        <li class="nav-item text-dark">@sayac</li>
+    }
+</ul> *@
+
+@* Tek satırlık kullanım şekli *@
+@{
+    var Message = "Hello World...";
+}
+<br />
+<br />
+@* Inline kullanım şekli *@
+<p>Mesajım şudur : @Message</p>
+
+@* Multi kullanım *@
+@{
+    var greetingMessage = "Sitemize hoşgeldiniz...beş gittiniz...";
+    var weekDay = DateTime.Now.DayOfWeek;
+    var result = greetingMessage + "Burası Kadıköy...Günümüz :" + weekDay;
+}
+
+<p>@result</p>
+<br />
+<hr />
+<h3>Sistem Değişgenlerinin Yazdırılması</h3>
+@{
+    // foreach (var item in Request.ServerVariables)
+    // {
+
+    // }
+}
+<br />
+<hr />
+<h3>While Loop</h3>
+@{
+    var index = 0;
+
+    while (index <= 100)
+    {
+        <span>Şu an @index inci sayıdayım</span><br />
+        index += 1;
+    }
+}
+<br />
+<hr />
+
+@{
+    string[] uyeler = { "Ümit", "Çekdar", "Öykü", "Emine", "Abdullah" };
+
+    int i = Array.IndexOf(uyeler, "Ümit"); // Bir eleman belirliyorum-indexini
+
+    int boyut = uyeler.Length; // Dizimin uzunluğu
+
+    string uye = uyeler[1];
+
+
+}
+<h3>Arrays</h3>
+@foreach( var kisi in uyeler )
+{
+    <p><b>Üye Adı : </b>@kisi</p>
+}
+<br />
+<p>Üye listesinin eleman sayısı : @boyut</p>
+<p>1. indexdeki eleman @uye</p>
+<p>Ümit isimli eleman @i .indexde</p>
+<br />
+<hr />
+<h3>Switch</h3>
+@{
+    var weekday = DateTime.Now.DayOfWeek;
+    var day = weekDay.ToString();
+    var message = "";
+}
+<br />
+@{
+    switch (day)
+    {
+        case "Monday":
+            message = "Bugün günlerden sendrom günü";
+            break;
+        case "Tuesday":
+            message = "Bugün sallanıyor";
+            break;
+        case "Wednesday":
+            message = "Bugün seller var";
+            break;
+        case "Thursday":
+            message = "Bugün bilmem";
+            break;
+        case "Friday":
+            message = "Ohh be günü";
+            break;
+        case "Saturday":
+            message = "Bugün mahalle pazarı günü";
+            break;
+        case "Sunday":
+            message = "Bugün relax günü";
+            break;
+
+        default:
+            message = "Bilemedim";
+            break;
+    }
+}
+<p>@message</p>
