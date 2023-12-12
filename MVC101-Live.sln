@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_MVCBasics", "P01_MVCBasics\P01_MVCBasics.csproj", "{05F9FAF2-8969-4E35-B080-D6E7C4DB0DCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_MVCBasics", "P01_MVCBasics\P01_MVCBasics.csproj", "{05F9FAF2-8969-4E35-B080-D6E7C4DB0DCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Models", "P02_Models\P02_Models.csproj", "{00D6BE58-A047-4D67-9BD0-A9F648C0F182}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_Models", "P02_Models\P02_Models.csproj", "{00D6BE58-A047-4D67-9BD0-A9F648C0F182}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Controllers", "P03_Controllers\P03_Controllers.csproj", "{D8AE5C6C-99D6-4E41-B4B7-6D9142C19FE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_Controllers", "P03_Controllers\P03_Controllers.csproj", "{D8AE5C6C-99D6-4E41-B4B7-6D9142C19FE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Views", "P04_Views\P04_Views.csproj", "{B09E0E8F-9665-4C75-9971-CC5FA823D1CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04_Views", "P04_Views\P04_Views.csproj", "{B09E0E8F-9665-4C75-9971-CC5FA823D1CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_DataPassingToViews", "P05_DataPassingToViews\P05_DataPassingToViews.csproj", "{E7042A25-FEF7-441C-80C0-D76A16DF6281}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B09E0E8F-9665-4C75-9971-CC5FA823D1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B09E0E8F-9665-4C75-9971-CC5FA823D1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B09E0E8F-9665-4C75-9971-CC5FA823D1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7042A25-FEF7-441C-80C0-D76A16DF6281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7042A25-FEF7-441C-80C0-D76A16DF6281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7042A25-FEF7-441C-80C0-D76A16DF6281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7042A25-FEF7-441C-80C0-D76A16DF6281}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
